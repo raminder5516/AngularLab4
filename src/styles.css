@@ -9,6 +9,7 @@ float:left;
 position:relative; 
 padding-right:100; 
 display:block; 
+margin-right: 1em;
 } 
 #header-nav li ul 
 { 
@@ -20,6 +21,4 @@ position:absolute;
 #header-nav ul li:hover > ul {
         display: block;
     }
- #header-nav ul li:hover > ul {
-        display: block;
-    }
+ 
