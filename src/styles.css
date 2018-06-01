@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+#header-nav ul { 
+    padding:1; margin:1; list-style:none; 
+    } 
+#header-nav li 
+{ 
+float:left; 
+position:relative; 
+padding-right:100; 
+display:block; 
+} 
+#header-nav li ul 
+{ 
+display:none; 
+position:absolute; 
+
+} 
+
+#header-nav ul li:hover > ul {
+        display: block;
+    }
+ #header-nav ul li:hover > ul {
+        display: block;
+    }
