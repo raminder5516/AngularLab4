@@ -1,0 +1,67 @@
+//font sizes
+$big-font:25px;
+$med-font:18px;
+$small-font:14px;
+
+//colors
+$lightgrey: lightgrey;
+
+ li{
+    list-style-type: none;
+
+    &:hover > ul{
+         display: block;
+     }
+ }
+
+li{
+    list-style-type: none;
+    &:hover{
+        background-color: $lightgrey;
+    }
+}
+
+li:hover > ul{
+    display: block;
+}
+header {
+    nav{
+        .links{
+            font-size: $big-font;
+           > li{
+                display: inline;
+                position: relative;
+
+                > .nested-links{
+                    padding-left:0;
+                    position: absolute;
+                    left: 0;
+                    display: none;
+                    font-size: $med-font;
+                    width:150%;
+
+                    > li{
+                        position: relative;
+                        .sublinks{
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            width: 200%;
+                            padding: 5px;
+                            font-size: $small-font;
+                        }
+                        &:hover > .sublinks{
+                            display: block;
+
+                        }
+                    }
+                }
+                &:hover > .nested-links{
+                    display: block;
+                }
+            }
+            
+        }
+    }
+}
